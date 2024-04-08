@@ -1,0 +1,106 @@
+Here's a list of commonly used Git commands:
+
+1. `git init`: Initialize a new Git repository.
+2. `git clone [url]`: Clone a repository into a new directory.
+3. `git add [file]`: Add file(s) to the staging area.
+4. `git commit -m "[message]"`: Commit changes to the repository with a message.
+5. `git status`: Check the status of the working directory and staging area.
+6. `git diff`: Show changes between commits, commit and working tree, etc.
+7. `git log`: View commit history.
+8. `git pull`: Fetch from and integrate with another repository or a local branch.
+9. `git push`: Update remote refs along with associated objects.
+10. `git branch`: List, create, or delete branches.
+11. `git checkout [branch]`: Switch branches or restore working tree files.
+12. `git merge [branch]`: Join two or more development histories together.
+13. `git remote`: Manage sets of tracked repositories.
+14. `git fetch`: Download objects and refs from another repository.
+15. `git reset [file]`: Reset the staging area for a file to the last commit.
+16. `git stash`: Stash changes in a dirty working directory.
+17. `git tag`: Create, list, delete, or verify a tag object signed with GPG.
+18. `git config`: Get and set repository or global options.
+19. `git mv [file] [new_file]`: Move or rename a file, a directory, or a symlink.
+20. `git rm [file]`: Remove files from the working tree and from the index.
+21. `git remote add [name] [url]`: Add a new remote repository.
+22. `git remote -v`: List all remote repositories.
+23. `git remote remove [name]`: Remove a remote repository.
+24. `git remote rename [old_name] [new_name]`: Rename a remote repository.
+25. `git remote set-url [name] [new_url]`: Change the URL of a remote repository.
+26. `git push -u [remote] [branch]`: Push a branch to a remote repository, along with setting up tracking.
+27. `git push [remote] [branch]`: Push a branch to a remote repository.
+28. `git pull [remote] [branch]`: Fetch from a remote repository and merge to the current branch.
+29. `git fetch [remote] [branch]`: Fetch from a remote repository.
+30. `git diff --staged`: Show changes between the staged area and the last commit.
+31. `git branch -d [branch]`: Delete a specified branch.
+32. `git branch -a`: List all branches (local and remote).
+33. `git log --oneline`: Show abbreviated commit information in one line.
+34. `git log --graph`: Display ASCII graph of commits on the current branch.
+35. `git log --author=[author]`: Filter commits by author.
+36. `git log --grep=[pattern]`: Filter commits by commit message.
+37. `git log --since=[date]`: Show commits more recent than a specific date.
+38. `git log --until=[date]`: Show commits older than a specific date.
+39. `git show [commit]`: Show information about a commit.
+40. `git show --name-only [commit]`: Show only names of changed files in a commit.
+41. `git show --name-status [commit]`: Show names and status of changed files in a commit.
+42. `git show --stat [commit]`: Show statistics of changes in a commit.
+43. `git show HEAD~[n]`: Show information about the nth previous commit.
+44. `git show HEAD^`: Show information about the parent of the current commit.
+45. `git log --decorate`: Print out the ref names of any commits that are shown.
+46. `git log --graph --oneline --decorate --all`: A concise log with a graph of the branches.
+47. `git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short`: Customized log format.
+48. `git blame [file]`: Show what revision and author last modified each line of a file.
+49. `git bisect`: Use binary search to find the commit that introduced a bug.
+50. `git reflog`: Show a log of changes to the repository's HEAD.
+51. `git revert [commit]`: Revert changes from a specific commit.
+52. `git cherry-pick [commit]`: Apply the changes introduced by some existing commits.
+53. `git rebase [base]`: Forward-port local commits to the updated upstream head.
+54. `git rebase -i [base]`: Interactively rebase commits.
+55. `git cherry [upstream] [branch]`: Find commits on the branch not merged into upstream.
+56. `git clean`: Remove untracked files from the working tree.
+57. `git show-branch`: Show branches and their commits.
+58. `git submodule`: Initialize, update, or inspect submodules.
+59. `git gc`: Cleanup unnecessary files and optimize the local repository.
+60. `git describe`: Describe the current or given commit with tags.
+61. `git archive`: Create a tarball from a repository.
+62. `git apply`: Apply a patch to files and/or to the index.
+63. `git format-patch`: Prepare patches for e-mail submission.
+64. `git am`: Apply a series of patches from a mailbox.
+65. `git fsck`: Perform a file system check on the repository.
+66. `git grep`: Print lines matching a pattern.
+67. `git instaweb`: Run a web server with an interface into the repository.
+68. `git svn`: Bidirectional operation between a Subversion repository and Git.
+69. `git worktree`: Manage multiple working trees.
+70. `git blame --since=1.week file.txt`: Blame for changes in the last week.
+71. `git shortlog`: Summarize 'git log' output.
+72. `git merge-base`: Find as a common ancestor for two commits.
+73. `git rev-parse`: Pick out and massage parameters.
+74. `git rev-list`: Lists commit objects in reverse chronological order.
+75. `git rev-parse --abbrev-ref HEAD`: Print current branch name.
+76. `git rebase --onto`: Rebase onto a new base.
+77. `git rebase --abort`: Abort an in-progress rebase.
+78. `git rebase --continue`: Continue an in-progress rebase after resolving conflicts.
+79. `git rebase --skip`: Skip a commit during an in-progress rebase.
+80. `git commit --amend`: Amend the last commit with new changes.
+81. `git stash list`: List all stashed changes.
+82. `git stash apply`: Apply the most recently stashed changes.
+83. `git stash pop`: Apply and remove the most recently stashed changes.
+84. `git stash drop`: Discard the most recently stashed changes.
+85. `git stash clear`: Remove all stashed entries.
+86. `git reflog expire`: Prune older reflog entries.
+87. `git reflog delete`: Delete specific reflog entries.
+88
+
+. `git remote prune [remote]`: Prune all stale remote-tracking branches.
+89. `git remote prune [remote] --dry-run`: Dry-run prune all stale remote-tracking branches.
+90. `git remote prune [remote] --verbose`: Verbosely prune all stale remote-tracking branches.
+91. `git show-branch --more=10`: Show 10 more branches.
+92. `git show-branch --topics`: Show the topic branches.
+93. `git rev-list --all --not $(git for-each-ref --format='%(refname)' refs/heads/*)`: List all commits not reachable from branches.
+94. `git update-index --assume-unchanged [file]`: Mark file as not changed.
+95. `git update-index --no-assume-unchanged [file]`: Mark file as changed.
+96. `git update-index --skip-worktree [file]`: Skip worktree check on file.
+97. `git update-index --no-skip-worktree [file]`: Do not skip worktree check on file.
+98. `git worktree add -b [branch] [path] [start-point]`: Create a new branch and checkout to a new worktree.
+99. `git worktree list`: List linked working trees.
+100. `git worktree remove [path]`: Remove linked working trees.
+
+This list includes some basic and advanced commands. The usage of these commands may vary depending on your workflow and project requirements.
