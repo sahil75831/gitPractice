@@ -12,3 +12,4 @@ function isAbove18(age){
 	return age>=18
 }
 
+console.log("first")
