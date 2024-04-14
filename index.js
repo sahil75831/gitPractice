@@ -13,3 +13,4 @@ function isAbove18(age){
 }
 
 console.log("first")
+console.log("second")
